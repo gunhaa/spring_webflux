@@ -1,9 +1,7 @@
 package com.webflux.test.webflux.book.mvc;
 
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 public class BookDto {
 
@@ -31,6 +29,8 @@ public class BookDto {
 
     @Builder
     @Getter
+    @NoArgsConstructor
+    @AllArgsConstructor
     public static class Response {
         private long bookId;
         private String titleKorean;
